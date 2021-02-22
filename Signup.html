@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bootstrap</title>
+        
+        <link rel="stylesheet" type="text/css" href="Index2.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 offset-md-4 form-div">
+                        <form id="form-register">
+                            <h1 class="text-center">Register</h1>
+                            <div class="form-group">
+                                    <label for="UserID">UserID</label>
+                                    <div id="myNumber"></div>
+                                        <p id="yourNumber">
+                                        </p>
+                                    
+
+                            </div> 
+                            <div class="form-group">
+                                    <label for="Name">Name</label>
+                                    <input type="text" name="Name" 
+                                    class="form-control form-control-lg"
+                                    placeholder="Enter the Name" required="required" />
+                            </div>
+                             <div class="form-group">
+                                    <label for="Email">Email ID</label>
+                                    <input type="Email" name="Email" 
+                                    class="form-control form-control-lg"
+                                    placeholder="Enter the Email" required="required" />
+                            </div>
+                            <div class="form-group">
+                                    <label for="Password">Password</label>
+                                    <input type="Password" name="Password" 
+                                    class="form-control form-control-lg"
+                                    placeholder="Enter the Password" required="required" />
+                            </div>
+                            <div class="form-group">
+                                    <label for="Address">Address</label>
+                                    <input type="Address" name="Address" 
+                                    class="form-control form-control-lg"
+                                    placeholder="Enter the Address" required="required" />
+                            </div>
+                             <div class="form-group">
+                                    <label for="Contact">Contact</label>
+                                    <input type="Contact" name="Contact" 
+                                    class="form-control form-control-lg"
+                                    placeholder="Enter the Contact Details" required="required" />
+                            </div>
+                             <div class="form-group">
+                                    <input type="submit" name="submit" 
+                                    form="form-register" value="Sign Up"class="btn btn-primary btn-block"/> 
+                            </div>
+                            <p class="text-center">
+                                Already have an Account?? 
+                                <a href="file:///D:/projects/Index2.html">Click Here</a>
+                                    
+                            </p>
+                                                          
+                        </form>
+                </div>
+            </div>
+        </div>
+            
+    </body>
+<script type="text/javascript"> 
+    function getNumber() {
+    var minNumber = 1000000;
+    var maxNumber = 10000000;
+    var randomnumber = Math.floor(Math.random() * (maxNumber) + minNumber);
+    document.getElementById("myNumber").innerHTML = randomnumber;
+    return false;
+}
+
+window.onload = getNumber;
+</script>                             
+
+   
+</html>
